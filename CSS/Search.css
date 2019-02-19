@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	font-family: 'Oswald', sans-serif !important;
+	background-color: black !important;
+}
+
+.navbar{
+	background-color: #1db954 !important;
+}
+
+button{
+	border-color: black !important;
+	color: black !important;
+}
+
+#position{
+	flex-wrap: wrap;
+	padding-top: 45px;
+}
+
+.top{
+	display: flex;
+	overflow: scroll;
+	padding-top: 2em;
+	border-bottom: solid;
+}
+
+#box{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	color: white;
+}
+
+h5{
+	font-size: 2em !important;
+	padding: 1em;
+	color: white !important;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+}
+
+img:hover{
+	opacity: 0.5;
+	transition: 0.4s;
+}
+
+p{
+	font-size: 15px;
+	font-weight: bold;
+}

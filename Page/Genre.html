@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/Genre.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<title>Genre</title>
+
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light">
+	<a class="navbar-brand" href="Home.html">My Spotify</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+		<a class="nav-item nav-link" href="AllAlbums.html">Albums <span class="sr-only">(current)</span></a>
+		<a class="nav-item nav-link" href="AllArtists.html">Artists</a>
+		<a class="nav-item nav-link" href="AllGenre.html">Genre</a>
+		</div>
+		<form methode="GET" action="Search.html" class="form-inline my-2 my-lg-0">
+	      <input name = "value" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	</div>
+</nav>
+</header>
+
+<div id='position' ng-app="myApp" ng-controller="customersCtrl">
+    <div id='albums' ng-repeat="value in myData">
+    	<p>{{value['artist_name']}}</p>
+    	<a href="Albums.html?#{{value['album_id']}}"><img src="{{value['cover_small']}}"></a>
+    	<p id='album_name'>{{value['albums_name']}}</p>
+    </div>
+</div>
+
+<script src="../Angular/Genre.js"></script>
+
+</div>
+</body>
+</html>

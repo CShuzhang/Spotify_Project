@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+	font-family: 'Oswald', sans-serif !important;
+	background-color: black !important;
+}
+
+.navbar{
+	background-color: #1db954 !important;
+}
+
+button{
+	border-color: black !important;
+	color: black !important;
+}
+
+#position{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 45px;
+}
+
+#genres{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	color: white;
+}
+
+#genres a{
+	font-size: 2em;
+	font-weight: bold;
+	color: white !important;
+}
